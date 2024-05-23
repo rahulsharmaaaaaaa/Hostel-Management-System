@@ -1,21 +1,41 @@
 <!DOCTYPE html>
-<html>
-<head >
-<title>Hostel Management System</title>
-<link rel="stylesheet" href="style.css">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        function myFunction() {
+            var x = document.getElementById("pwd");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
 </head>
-<body id="b1">
-    <!-- <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="#Locate Us">Locate Us</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <input type="text" placeholder="Hostel Search...">
-      </div> -->
-      <div id="div1">
 
-      </div>
-
+<body>
+    <div id="main">
+        <div id="title">
+            <span>HOSTEL BLU INN</span><br>
+            <span id="tagline">---- Life Style is Here ----</span>
+        </div>
+        <div id="form">
+            <form action="" id="details">
+                <span class="label">UserID</span><br>
+                <input type="text" placeholder="user name"><br>
+                <span class="label">Password</span><br>
+                <input type="password" placeholder="password" id="pwd"><br>
+                <span id="shwpass_toggle"><input type="checkbox" id="shwpass_toggle" onclick="myFunction()">Show Password</span>
+                <span class="label" id="forgot"><a href="">forgot password?</a></span>
+                <input type="submit" id="btn_submit" value="Sign up">
+            </form>
+        </div>
+    </div>
 </body>
-</html>
 
+</html>
